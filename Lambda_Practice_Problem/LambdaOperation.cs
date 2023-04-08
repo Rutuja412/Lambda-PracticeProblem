@@ -22,5 +22,15 @@ namespace Lambda_Practice_Problem
             Program.Display(TotalMarks);
 
         }
+        //Display all the student records in each address.
+        public static void ShowAddressRecord(List<Student> students)
+        {
+            Console.WriteLine("Address Records");
+            List<Student>AddressRecord=students.OrderBy(s => s.Address).ToList();
+            Program.Display(AddressRecord);
+            var Addressss= students.OrderBy(s => s.Address).ToList();
+           
+            
+        }
     }
 }
