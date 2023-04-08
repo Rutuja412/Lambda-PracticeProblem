@@ -19,6 +19,8 @@ namespace Lambda_Practice_Problem
                 new Student() { Id = 5, Name = "Radhika", PhoneNumber = "9011973816", Address = "Satara", Age = 18 ,TotalMarks = 55 },
             };
             Display(list);
+            Console.WriteLine("-----------------------");
+            LambdaOperationW.StidentsAgeBetween12to18(list);
 
         }
         public static void Display(List<Student> list)
