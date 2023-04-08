@@ -10,7 +10,7 @@ namespace Lambda_Practice_Problem
         public static void StidentsAgeBetween12to18(List<Student> students)
         {
             Console.WriteLine("Age Records");
-             List<Student> AgeRecords = students.Where(s => s.Age >= 12 && s.Age <= 18).ToList();
+            List<Student> AgeRecords = students.Where(s => s.Age >= 12 && s.Age <= 18).ToList();
             Program.Display(AgeRecords);
 
         }
@@ -26,18 +26,27 @@ namespace Lambda_Practice_Problem
         public static void ShowAddressRecord(List<Student> students)
         {
             Console.WriteLine("Address Records");
-            List<Student>AddressRecord=students.OrderBy(s => s.Address).ToList();
+            List<Student> AddressRecord = students.OrderBy(s => s.Address).ToList();
             Program.Display(AddressRecord);
-           
-           
+
+
         }
         //Fetch first three students records.
         public static void CheckFirst3Records(List<Student> students)
         {
             Console.WriteLine("Top 3 records");
-           List<Student> Top3 = students.Take(3).ToList();
+            List<Student> Top3 = students.Take(3).ToList();
             Program.Display(Top3);
 
+        }
+        //Search particular student based on name.
+        public static void SearchByName(List<Student> students)
+        {
+            Console.WriteLine("Search By Name----");
+            if (students.Exists (s=> s.Name == "Rutuja"))
+            { 
+                Console.WriteLine("Yes, A person having name  'Rutuja' exists in our list");
+            }
         }
 
     }
