@@ -16,11 +16,13 @@ namespace Lambda_Practice_Problem
                 new Student() { Id = 2, Name = "Snehal", PhoneNumber = "9011973456", Address = "Satara", Age = 12,TotalMarks=98},
                 new Student() { Id = 3, Name = "Kajal", PhoneNumber = "9011973878", Address = "Satara", Age = 25 ,TotalMarks=55 },
                 new Student() { Id = 4, Name = "Pooja", PhoneNumber = "9011973874", Address = "Satara", Age = 14 ,TotalMarks=100 },
-                new Student() { Id = 5, Name = "Radhika", PhoneNumber = "9011973816", Address = "Satara", Age = 18 ,TotalMarks = 55 },
+                new Student() { Id = 5, Name = "Radhika", PhoneNumber = "9011973816", Address = "Satara", Age = 18 ,TotalMarks = 99 },
             };
             Display(list);
             Console.WriteLine("-----------------------");
             LambdaOperationW.StidentsAgeBetween12to18(list);
+            Console.WriteLine("_________________");
+            LambdaOperationW.SortBasedOnMarks(list);
 
         }
         public static void Display(List<Student> list)

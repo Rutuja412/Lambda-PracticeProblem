@@ -14,5 +14,13 @@ namespace Lambda_Practice_Problem
             Program.Display(AgeRecords);
 
         }
+        //Sort students data in descending order based on TotalMarks.
+        public static void SortBasedOnMarks(List<Student> students)
+        {
+            Console.WriteLine("Sort students data in descending order based on TotalMarkks");
+            List<Student> TotalMarks = students.OrderByDescending(s => s.TotalMarks).ToList();
+            Program.Display(TotalMarks);
+
+        }
     }
 }
