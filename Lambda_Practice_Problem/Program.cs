@@ -25,6 +25,8 @@ namespace Lambda_Practice_Problem
             LambdaOperationW.SortBasedOnMarks(list);
             Console.WriteLine("---------");
             LambdaOperationW.ShowAddressRecord(list);
+            Console.WriteLine("------------------");
+            LambdaOperationW.CheckFirst3Records(list);
 
         }
         public static void Display(List<Student> list)

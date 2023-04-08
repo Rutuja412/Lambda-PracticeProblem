@@ -28,9 +28,17 @@ namespace Lambda_Practice_Problem
             Console.WriteLine("Address Records");
             List<Student>AddressRecord=students.OrderBy(s => s.Address).ToList();
             Program.Display(AddressRecord);
-            var Addressss= students.OrderBy(s => s.Address).ToList();
            
-            
+           
         }
+        //Fetch first three students records.
+        public static void CheckFirst3Records(List<Student> students)
+        {
+            Console.WriteLine("Top 3 records");
+           List<Student> Top3 = students.Take(3).ToList();
+            Program.Display(Top3);
+
+        }
+
     }
 }
